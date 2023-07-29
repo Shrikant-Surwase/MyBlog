@@ -10,8 +10,8 @@ function Footer() {
 
       <div className="container flex flex-wrap items-center justify-between mx-auto">
 
-        <Link href="https://github.com/frontendweb3" className="flex items-center">
-          <span className="self-center text-gray-400 text-sm font-semibold whitespace-nowrap dark:text-white">2023 copyright frontend web</span>
+        <Link href="/" className="flex items-center">
+          <span className="self-center text-gray-400 text-sm font-semibold whitespace-nowrap dark:text-white hover:text-black hover:font-semibold">2023 copyright @Shrikant-Surwase</span>
         </Link>
 
         <div className="flex md:order-2">

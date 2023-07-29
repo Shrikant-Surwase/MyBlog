@@ -1,6 +1,8 @@
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaSun, FaRegMoon } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedin, FaInstagram, FaSun, FaRegMoon } from "react-icons/fa";
 import { useTheme } from 'next-themes'
 import Link from "next/link";
+import Image from "next/image";
+import logo from '../public/images/bloglogo.jpg'
 import Search from "@/components/Search";
 
 function Header() {
@@ -13,7 +15,8 @@ function Header() {
       <div className="container flex flex-wrap items-center justify-between mx-auto">
 
         <Link href="/" className="flex items-center">
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">OpenBlog</span>
+          <Image className="rounded-3xl p-3 hover:w-16" width={60} height={70} src={logo} alt=" demo image " />
+          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">YourBlog</span>
         </Link>
 
         <div className="flex md:order-2">
@@ -26,21 +29,21 @@ function Header() {
             </li>
 
             <li>
-              <Link href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white" aria-current="page">
+              <Link href="https://github.com/Shrikant-Surwase" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white" aria-current="page">
                 <FaTwitter />
               </Link>
             </li>
             <li>
-              <Link href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded  hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white"> <FaFacebook />
+              <Link href="https://github.com/Shrikant-Surwase" className="block py-2 pl-3 pr-4 text-gray-700 rounded  hover:text-green-700 dark:hover:text-green-700 md:p-0 dark:text-white"> <FaGithub />
               </Link>
             </li>
             <li>
-              <Link href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white">
+              <Link href="https://www.linkedin.com/in/shrikant-surwase-139aa2224/" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white">
                 <FaLinkedin />
               </Link>
             </li>
             <li>
-              <Link href="#" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-blue-700 dark:hover:text-blue-700 md:p-0 dark:text-white">
+              <Link href="https://www.linkedin.com/in/shrikant-surwase-139aa2224/" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-red-700 dark:hover:text-red-500 md:p-0 dark:text-white">
                 <FaInstagram />
               </Link>
             </li>

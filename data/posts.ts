@@ -6,7 +6,7 @@ export const posts: Array<{ id: string; title: string; description: string; date
     date: "2022-11-09T08:18:10.494Z",
     tags: ["Photography"],
     category: ["Photography"],
-    image: "/images/camera.jpg",
+    image: "/images/camara.jpeg",
     author: "Jeanne Ballard"
   },
   {

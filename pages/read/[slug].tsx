@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from 'next/image';
 import { posts } from "@/data/posts";
 import { type Posts } from "@/type";
-
 export async function getStaticProps(context: { params: { slug: string } }) {
 
   const { slug } = context.params
@@ -45,11 +44,11 @@ function Read({ post }: { post: string }) {
           <article className="mx-auto w-full max-w-3xl prose lg:prose-xl prose-stone dark:prose-invert">
 
             <div className="my-4 flex justify-between">
-              <Link className="text-xl flex flex-row items-center mb-6 no-underline" href={`/`}>
+              <Link className="text-xl flex flex-row items-center mb-6 no-underline hover:font-semibold" href={`/`}>
                 <FaChevronLeft /> Back
               </Link>
 
-              <Link className="text-xl mb-6 no-underline" href={`/tags/${singlePost.tags[0].trim().toLowerCase().replaceAll(' ', '-')}`}>
+              <Link className="text-xl mb-6 no-underline hover:font-semibold" href={`/tags/${singlePost.tags[0].trim().toLowerCase().replaceAll(' ', '-')}`}>
                 #{singlePost.tags[0]}
               </Link>
             </div>
@@ -90,8 +89,7 @@ function Read({ post }: { post: string }) {
               <figcaption className="text-center">Digital art by Anonymous</figcaption>
             </figure>
 
-            <p>Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way,
-              you can think things through before committing to an actual design project.</p>
+            <p>{singlePost.description}</p>
 
             <p>But then I found a <a href="https://flowbite.com">component library based on Tailwind CSS called
               Flowbite</a>. It comes with the most commonly used UI components, such as buttons, navigation
@@ -201,7 +199,7 @@ function Read({ post }: { post: string }) {
               <code className="language-html">
 
                 &lt;dl class="grid grid-cols-2 gap-8 max-w-screen-md text-gray-900 sm:grid-cols-3 dark:text-white"&gt;
-                &lt;div className="flex flex-col justify-center items-center"&gt;
+                &lt;123div className="flex flex-col justify-center items-center"&gt;
                 &lt;dt className="mb-2 text-3xl font-extrabold"&gt;73M+&lt;/dt&gt;
                 &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;developers&lt;/dd&gt;
                 &lt;/div&gt;

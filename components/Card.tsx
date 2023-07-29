@@ -5,9 +5,11 @@ function Card({ item }: { item: Posts }) {
 
   return (
 
-    <div className="max-w-full bg-white dark:bg-gray-800">
-
-      <Image className="rounded-lg p-3" width={1000} height={324} src={item.image} alt=" demo image " />
+    <div className="max-w-full bg-white dark:bg-gray-800 hover:dark:bg-blue-700 hover:bg-red-300">
+       <Link  href={`/read/${item.title.toLowerCase().trim().split(" ").join("-")}`}>
+          <Image className="rounded-lg p-3" width={1000} height={329} src={item.image} alt=" demo image " />
+        </Link>
+      
 
       <div className="p-3">
 
