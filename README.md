@@ -1,4 +1,4 @@
-#OpenBlog is open source template is design and built with nextjs, tailwind CSS and Markdown. 
+## OpenBlog is open source template is design and built with nextjs, tailwind CSS and Markdown. 
 
 ## Getting Started
 
